@@ -24,3 +24,8 @@ L2 = sorted(L, key=by_name)
 print(L2)
 L3 = sorted(L, key=by_score)
 print(L3)
+# List 适合存“同类事物”的集合（比如一堆学生）。
+
+# Tuple 适合存“一个事物”的多个属性（比如一个学生的名字和分数）。
+
+# 用 Tuple 是为了暗示：“这俩数据是一对儿，别把它们拆散了，也别轻易改它们。”
