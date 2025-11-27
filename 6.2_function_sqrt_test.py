@@ -6,6 +6,8 @@ import math
 
 def quadratic(a, b, c):
     delta = b*b-4*a*c
+    # 代码复用：如果 math.sqrt(b*b-4*a*c) 在代码里出现了三次，就应该把它提取成一个变量 delta。
+    # 这不仅让代码更好看，还能减少 CPU 重复计算的开销。
     if delta >= 0:
         x = (-b+math.sqrt(delta))/(2*a)
         y = (-b-math.sqrt(delta))/(2*a)
